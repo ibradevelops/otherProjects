@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: inherit;
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right bottom, honeydew, gainsboro);
+}
+
+.title {
+  display: flex;
+}
+.title h1 {
+  font-size: 8.2rem;
+  text-shadow: 1px 1px 0 black;
+}
+
+main {
+  position: relative;
+  top: -1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+main input {
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 12rem;
+  text-align: center;
+}
+
+.winner__message {
+  top: -2rem;
+  color: white;
+  position: relative;
+  padding: 0.6rem;
+  background-color: blue;
+  border-radius: 1rem;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  text-align: center;
+}
+.winner__message h2,
+.winner__message p {
+  font-size: 2.2rem;
+}
+
+.title h1:first-of-type {
+  color: blue;
+}
+
+.title h1:nth-child(3) {
+  color: red;
+}
+
+.title h1:last-of-type {
+  color: green;
+}
+
+.happy__img {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  z-index: -1;
+}
+
+.happy-one {
+  left: 3rem;
+  transform: rotate(40deg);
+}
+
+.happy-two {
+  right: 3rem;
+  transform: rotate(-40deg);
+}
+
+input:disabled {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

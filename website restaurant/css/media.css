@@ -1,0 +1,164 @@
+/* 1200px */
+@media (max-width: 75em) {
+  .blog-section-items {
+    flex-direction: column;
+    gap: 8.2rem;
+  }
+
+  .blog-section-items img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .blog-header,
+  .blog-date,
+  .blog-paragraph {
+    width: 50%;
+  }
+
+  .wrapper {
+    padding: 5rem 15rem;
+  }
+
+  .meals {
+    /* flex-direction: column-reverse; */
+    /* gap: 4.4rem; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .right-icon,
+  .left-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .first-featured-section {
+    flex-direction: column-reverse;
+  }
+
+  .first-desert-img {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .list-of-items {
+    padding-inline: 4rem;
+  }
+
+  .header-icons-set {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .gallery-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .desert-bio {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 880px) {
+  .list-of-items {
+    grid-template-columns: 1fr;
+    justify-content: start;
+  }
+
+  .first-list,
+  .second-list {
+    justify-self: auto;
+  }
+
+  .wrapper-two {
+    flex-direction: column;
+  }
+
+  .wrapper-three {
+    margin-top: 6.4rem;
+    margin-bottom: 4.4rem;
+  }
+
+  .meals {
+    flex-direction: column;
+  }
+  .meal-price {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 55%;
+  }
+  .booking-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .second-blog-section-item img,
+  .first-blog-section-item img {
+    width: 70%;
+  }
+
+  .second-post-footer {
+    gap: 0;
+  }
+  .header-list {
+    display: none;
+  }
+  .first-desert-img {
+    width: 70%;
+  }
+
+  .menu .menu-icon {
+    display: block;
+  }
+
+  .main-white-text {
+    font-size: 3.2rem;
+  }
+
+  .main-gold-text {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 110vh;
+  }
+  .center-part {
+    margin-top: 4.4rem;
+  }
+  .wrapper {
+    padding: 3rem 9rem;
+  }
+  .booking-part {
+    grid-template-columns: 1fr;
+  }
+
+  .list-of-items li {
+    font-size: 1.4rem;
+  }
+
+  .list-of-items .second-p {
+    font-size: 1.2rem;
+  }
+  .wrapper-one {
+    margin-top: 4rem;
+  }
+
+  .meal-part {
+    width: 80%;
+  }
+
+  .active--new {
+    justify-self: flex-start;
+  }
+}

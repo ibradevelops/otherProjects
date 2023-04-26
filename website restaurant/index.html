@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Rubik:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <nav class="nav-bar">
+          <div class="header-logo">
+            <img
+              src="img/white-fork.png"
+              alt="tools for eating icon"
+              class="header-icon"
+            />
+            <p class="nav-first-name">Hunger</p>
+            <p class="nav-second-name">Hunt</p>
+          </div>
+          <ul class="header-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="header-icons-set">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+          <!-- 
+
+            <div class="menu">
+              <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+            </div>
+          -->
+        </nav>
+        <!--  -->
+        <div class="center-part">
+          <h1 class="main-gold-text">Welcome to</h1>
+          <h1 class="main-white-text">Hunger hunt</h1>
+          <div class="div-gold-fork">
+            <img
+              src="img/gold-fork.png"
+              alt="icon of gold fork"
+              class="gold-fork"
+            />
+          </div>
+          <p class="text-part">Get the freshest ingredients from hunger hunt</p>
+          <form class="booking-part">
+            <input type="date" class="booking-part-date" required />
+            <input type="time" class="booking-part-time" required />
+            <input
+              type="number"
+              class="booking-part-number"
+              placeholder="Number of people"
+              required
+            />
+            <button type="submit" class="btn-part">Book now</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="featured-section">
+        <div class="first-featured-section">
+          <img
+            src="img/bigdesert.png"
+            alt="first picture of desert"
+            class="first-desert-img"
+          />
+          <div class="desert-bio">
+            <p class="desert-about-us">About us</p>
+            <h2 class="desert-header">The most awarded restaurant</h2>
+            <img src="img/gold-fork.png" alt="logo of gold fork" />
+            <p class="desert-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              dignissimos corrupti nemo tempora, at temporest repudiandae nihil
+              deleniti quia quam! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quae, possimus? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Delectus, earum?
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="second-featured-section">
+        <div class="bio-featured-section">
+          <p class="desert-about-us">Check</p>
+          <h2 class="desert-header">Featured dishes</h2>
+          <div class="pseudo-img">
+            <img
+              src="img/gold-fork.png"
+              alt=""
+              class="gold-fork"
+              id="gold-fork"
+            />
+          </div>
+        </div>
+        <div class="meals">
+          <div class="left-icon">
+            <ion-icon name="chevron-back-outline" class="meal-icon"></ion-icon>
+          </div>
+          <figure class="meal-part">
+            <img src="img/meal1.png" alt="" class="meal-img" />
+            <p class="meal-type">Salad</p>
+            <p class="meal-name">Italian fresh salad</p>
+            <p class="meal-ingredients">
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <p role="button" aria-label="meal price" class="meal-price">$12</p>
+          </figure>
+          <figure class="meal-part">
+            <img src="img/meal2.png" alt="" class="meal-img" />
+            <p class="meal-type">Salad</p>
+            <p class="meal-name">Italian fresh salad</p>
+            <p class="meal-ingredients">
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <p role="button" aria-label="meal price" class="meal-price">$12</p>
+          </figure>
+          <figure class="meal-part">
+            <img src="img/meal3.png" alt="" class="meal-img" />
+            <p class="meal-type">Salad</p>
+            <p class="meal-name">Italian fresh salad</p>
+            <p class="meal-ingredients">
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <p role="button" aria-label="meal price" class="meal-price">$12</p>
+          </figure>
+          <div class="right-icon">
+            <ion-icon
+              name="chevron-forward-outline"
+              class="meal-icon"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="open-section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper-one">
+            <h3>Time</h3>
+            <h2>Open at</h2>
+            <img src="img/gold-fork.png" alt="" />
+          </div>
+          <div class="wrapper-two">
+            <div class="first-side-wrapper-two">
+              <h2>Monday-Friday</h2>
+              <p>7am - 11am (Breakfast)</p>
+              <p>11am - 10pm (Lunch/Dinner)</p>
+            </div>
+            <div class="second-side-wrapper-two">
+              <h2>Saturday - Sunday</h2>
+              <p>8am - 1pm (Breakfast)</p>
+              <p>1pm - 9pm (Lunch/Dinner)</p>
+            </div>
+          </div>
+          <div class="wrapper-three">
+            <p>+15 124 567 85 23</p>
+            <a href="#" role="button">Book your table</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="starters-section">
+      <h3>Discovers</h3>
+      <h2>Our starters</h2>
+      <div class="pseudo-img">
+        <img src="img/gold-fork.png" alt="" />
+      </div>
+      <div class="list-of-items">
+        <ul class="first-list">
+          <span
+            ><li>Soft-boiled organic egg</li>
+            <p class="first-p">
+              with"soldires".................................
+            </p>
+            <p class="second-p">5.00</p></span
+          >
+          <span class="active--new"
+            ><li>Scrambled Eggs in Puff Pastry</li>
+            <p class="first-p">with"soldires"..................</p>
+            <p class="second-p">9.00</p></span
+          >
+          <span
+            ><li>Egg Any Style</li>
+            <p class="first-p">
+              with"soldires".....................................................
+            </p>
+            <p class="second-p">6.00</p></span
+          >
+          <span
+            ><li>Eggs Norwegian</li>
+            <p class="first-p">
+              with"soldires"................................................
+            </p>
+            <p class="second-p">5.00</p></span
+          >
+          <span
+            ><li>Eggs Benedict</li>
+            <p class="first-p">
+              with"soldires"....................................................
+            </p>
+            <p class="second-p">2.00</p></span
+          >
+          <span
+            ><li>Soft Organic Egg</li>
+            <p class="first-p">
+              with"soldires"...............................................
+            </p>
+            <p class="second-p">8.00</p></span
+          >
+        </ul>
+        <ul class="second-list">
+          <span
+            ><li>Soft-boiled organic egg</li>
+            <p class="first-p">
+              with"soldires".................................
+            </p>
+            <p class="second-p">5.00</p></span
+          >
+          <span class="active--new"
+            ><li>Scrambled Eggs in Puff Pastry</li>
+            <p class="first-p">with"soldires"..................</p>
+            <p class="second-p">9.00</p></span
+          >
+          <span
+            ><li>Egg Any Style</li>
+            <p class="first-p">
+              with"soldires".....................................................
+            </p>
+            <p class="second-p">6.00</p></span
+          >
+          <span
+            ><li>Eggs Norwegian</li>
+            <p class="first-p">
+              with"soldires"................................................
+            </p>
+            <p class="second-p">5.00</p></span
+          >
+          <span
+            ><li>Eggs Benedict</li>
+            <p class="first-p">
+              with"soldires"....................................................
+            </p>
+            <p class="second-p">2.00</p></span
+          >
+          <span
+            ><li>Soft Organic Egg</li>
+            <p class="first-p">
+              with"soldires"...............................................
+            </p>
+            <p class="second-p">8.00</p></span
+          >
+        </ul>
+      </div>
+      <a href="#" class="btn">View full menu</a>
+    </div>
+    <!--  -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="blog-text">
+          <h3>Check</h3>
+          <h2>Our blogs</h2>
+          <div class="pseudo-img">
+            <img src="img/gold-fork.png" alt="" />
+          </div>
+        </div>
+        <div class="blog-section-items">
+          <div class="first-blog-section-item">
+            <img src="img/firstblogimage.png" alt="" />
+            <h2 class="blog-header">We love it when you love it</h2>
+            <br />
+            <p class="blog-date">
+              March 30, 2018 by <strong>Gustavo Berneir</strong>, 2 comments
+            </p>
+            <p class="blog-paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              incidunt nemo voluptates doloribus dolor, inventore ipsum optio
+              quam impedit iure quo commodi.
+            </p>
+          </div>
+          <div class="second-blog-section-item">
+            <img src="img/secondblogimage.png" alt="" />
+            <h2 class="blog-header">We love it when you love it</h2>
+            <br />
+            <p class="blog-date">
+              March 30, 2018 by <strong>Gustavo Berneir</strong>, 2 comments
+            </p>
+            <p class="blog-paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              incidunt nemo voluptates doloribus dolor, inventore ipsum optio
+              quam impedit iure quo commodi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---->
+    <section class="gallery-section">
+      <div class="gallery-text">
+        <h3>Discover</h3>
+        <h2>Our Gallery</h2>
+        <div class="pseudo-img">
+          <img src="img/gold-fork.png" alt="" />
+        </div>
+      </div>
+      <div class="gallery-photos">
+        <div class="test">
+          <!-- NIJE GOTOVO -->
+          <img src="img/gallery2.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery3.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery4.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery7.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery6.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery7.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery8.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+        <div class="test">
+          <img src="img/gallery1.png" alt="" class="text-over-img" />
+          <ion-icon class="gallery-icon" name="resize-outline"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="first-list-footer">
+            <h2 class="helper">Contact info</h2>
+            <p>PO Box 1612 Collin Street,NYC</p>
+            <p>(+801)-2345-6789</p>
+            <p>support@hungerhunt.com</p>
+            <p class="invisible">support@hungerhunt.com</p>
+          </div>
+          <div class="second-list-footer">
+            <h2>Support</h2>
+            <p>FAQ</p>
+            <p>Delivery</p>
+            <p>Payment Options</p>
+            <p>Returns & Refunds</p>
+          </div>
+          <div class="third-list-footer">
+            <h2>Shop</h2>
+            <p>Non - Veg</p>
+            <p>Salads</p>
+            <p>Desserts</p>
+            <p>Appetizers</p>
+          </div>
+          <div class="fourth-list-footer">
+            <h2>Information</h2>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Blogs</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="fifth-list-footer">
+            <h2>My account</h2>
+            <p>Your Account</p>
+            <p>Check Out</p>
+            <p>Login</p>
+            <p>Register</p>
+          </div>
+          <div class="sixth-list-footer">
+            <h2>Finds us on</h2>
+            <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+            <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
+            <ion-icon name="logo-pinterest" class="footer-icon"></ion-icon>
+            <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+          </div>
+          <div class="seventh-list-footer">
+            <label for="email">Newsletter</label>
+            <input
+              type="text"
+              id="email"
+              required
+              placeholder="Your email address"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="post-footer">
+      <div class="container second-post-footer">
+        <div class="post-footer-left-side">
+          <p>@ ibraDevelops. All Rights Reserved</p>
+        </div>
+        <div class="post-footer-right-side">
+          <img src="img/visa.png" alt="" />
+          <img src="img/mastercard.png" alt="" />
+          <img src="img/american.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

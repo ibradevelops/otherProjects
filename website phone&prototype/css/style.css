@@ -1,0 +1,531 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 192, 203, 0.3);
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../images/bck.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 100px;
+}
+
+.nav {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 25px;
+}
+
+.left-side-nav img,
+.bio-img {
+  float: left;
+}
+.left-side-nav h2 {
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
+.right-side-nav img {
+  float: right;
+  position: relative;
+  top: -22.5px;
+  cursor: pointer;
+}
+
+.nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header.container a:hover{
+color: black;
+}
+
+.header-container {
+  top: 35%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-container h1 {
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+a:link:visited,
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.platform {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: -210px;
+}
+
+#main-phone {
+  width: 400px;
+  height: auto;
+}
+
+.phone-section {
+  text-align: center;
+  position: relative;
+  top: -300px;
+}
+
+.unique {
+  position: relative;
+  top: -150px;
+}
+
+.item {
+  text-align: center;
+}
+
+.main-section {
+  display: flex;
+  color: grey;
+  position: relative;
+  top: -200px;
+}
+.main-section h3 {
+  color: rgb(80, 78, 78);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.main-section img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 80%;
+  background-color: grey;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+  top: -100px;
+}
+
+.phone-in-hand {
+  width: 650px;
+  height: auto;
+  position: relative;
+  top: 54px;
+}
+
+.working-image {
+  width: 75px;
+  float: left;
+  height: auto;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.working-section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  color: grey;
+}
+
+.second-working-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.create-app h3,
+.share-app h3 {
+  color: black;
+  font-size: 22px;
+  margin-top: 50px;
+}
+
+.second-working-section {
+  margin-top: 20px;
+}
+
+.second-working-section h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.second-working-section p {
+  font-size: 20px;
+  line-height: 1.2;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* ANIMACIJE */
+
+.animated {
+  animation: bigphone 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+}
+.animated-nav {
+  animation: animatednav 1s;
+}
+
+.main-animation {
+  animation: mainanimation 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.bio-section {
+  background: url(../images/forest.jpg);
+  height: 420px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.bio-section h1 {
+  position: relative;
+  top: 50px;
+  font-size: 45px;
+  text-shadow: 2px 1px black;
+}
+
+.biography {
+  width: 50%;
+  text-align: left;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.biography p {
+  position: relative;
+  top: 30px;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  font-size: 18px;
+  text-shadow: 2px 1px black;
+  left: 20px;
+}
+.bio-img {
+  border-radius: 100%;
+  border: 5px solid gray;
+}
+
+.footer-res {
+  width: 200px;
+  height: auto;
+  margin-inline: 75px;
+  margin-block: 100px;
+}
+
+.pre-footer-section {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.pre-footer-section h2 {
+  font-size: 50px;
+  color: black;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.icon-color {
+  color: purple;
+}
+
+.color-p {
+  color: grey;
+}
+
+.footer h2 {
+  color: black;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.space-icons {
+  margin-bottom: 20px;
+}
+
+.space-icons i {
+  float: left;
+  cursor: pointer;
+  font-size: 25px;
+}
+.left-side-footer {
+  display: inline-block;
+  text-align: left;
+}
+.space-icons p {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-left: 30px;
+}
+
+.center-side-footer {
+  margin-top: -100px;
+  display: inline-block;
+  position: relative;
+  right: -40px;
+}
+.post-footer{
+  padding-block: 50px;
+  text-align: center;
+  color: black;
+}
+
+.post-footer {
+  font-size: 32px;
+  margin-top: 30px;
+}
+
+.img-padding {
+  margin: 20px;
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+.right-side-footer {
+  display: inline-block;
+  margin-left: 100px;
+  position: relative;
+  top: -50px;
+}
+
+.footer {
+  text-align: center;
+}
+
+form input {
+  padding: 12.5px 20px;
+  border: none;
+  border-radius: 10px;
+}
+form button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+form button:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+form input:focus {
+  background-color: lightgreen;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .phone-in-hand {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-container h1 {
+    font-size: 40px;
+  }
+  .platform {
+    display: none;
+  }
+  .left-side-footer{
+    margin-bottom: 50px;
+
+  }
+  .footer{
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 50%;
+    margin: 50px auto;
+    line-height: 22px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .bell {
+    position: relative;
+    top: -150px;
+  }
+
+  a {
+    font-size: 22px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .bio-section {
+    position: relative;
+    height: 720px;
+  }
+
+  .bio-img {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bio-section .biography p {
+    clear: both;
+    text-align: center;
+    position: relative;
+    top: 75px;
+    word-spacing: 2px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .bio-section h1 {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .working-section {
+    margin-top: -300px;
+  }
+  .center-side-footer{
+    display: block;
+    position: relative;
+    top: 100px;
+    left: 0;
+  }
+
+  .right-side-footer{
+   
+    margin: 0 auto;
+
+  }
+
+  form input{
+    padding: 12.5px 75px;
+  }
+
+}
+
+@media (max-width:480px){
+ .bio-img{
+  top: -10%;
+ }
+
+ .biography p{
+  margin-left: -50px;
+  margin-right: 0;
+ }
+ .post-footer p{
+  font-size: 25px;
+ }
+
+ form input{
+  padding: 12.5px 25px;
+}
+}
+
+@keyframes mainanimation{
+0%{
+  opacity: 0;
+}
+
+100%{
+  opacity: 1;
+}
+}
+
+@keyframes bigphone{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes animatednav{
+  0%{
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
+
+
+@media(max-width:1020px){
+  .line{
+    display: none;
+  }
+  .footer .right-side-footer{
+    margin-top: 200px;
+  }
+  
+}
+
+
+
+.header-container a:any-link:active{
+  color: black;
+  transform: translateY(51px)
+}
