@@ -1,0 +1,83 @@
+$pseudo-color: lightgreen;
+@mixin flexing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background: linear-gradient(to right bottom, green, yellow);
+}
+
+main {
+  height: inherit;
+  @include flexing;
+
+  .calculator {
+    background-color: rgb(0, 0, 0, 0.75);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 2rem;
+
+    div,
+    .cl {
+      object-fit: contain;
+      font-size: 6.2rem;
+      color: white;
+      text-transform: uppercase;
+      border: 1px solid white;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background-color: $pseudo-color;
+        color: black;
+        border-color: transparent;
+      }
+    }
+
+    input[type="text"] {
+      background-color: white;
+      grid-column: 1 / -1;
+      width: 100%;
+      height: 9.2rem;
+      outline: none;
+      border: 0.3rem solid white;
+      border-radius: 4rem;
+      background: transparent;
+      transition: all 0.25s ease;
+      color: white;
+      font-size: 6.2rem;
+      text-align: right;
+      padding-right: 1rem;
+    }
+
+    div[class="result"] {
+      grid-column: 3 / -1;
+    }
+    .cl {
+      grid-row: 5;
+      grid-column: 4/5;
+      min-height: 100%;
+    }
+    .delete {
+      grid-column: 1/3;
+    }
+  }
+}

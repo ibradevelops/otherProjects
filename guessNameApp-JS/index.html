@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container overlay">
+      <div class="main-content">
+        <div class="first-part">
+          <h1>Unesi Ime i Provjeri da li je Ime Muško ili Žensko</h1>
+        </div>
+        <div class="second-part">
+          <input type="text" id="input-name" />
+          <ion-icon
+            name="close-outline"
+            class="delete-from-input hide"
+          ></ion-icon>
+          <button id="btn-check">Provjeri</button>
+        </div>
+        <div class="third-part">
+          <ion-icon
+            name="close-circle-outline"
+            class="close-icon hide"
+          ></ion-icon>
+          <img src="male.png" alt="" class="male-png hide" />
+          <img src="female.png" alt="" class="female-png hide" />
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

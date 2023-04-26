@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("bck.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.main-content {
+  text-align: center;
+  position: relative;
+  top: -5%;
+}
+.first-part h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3.4rem;
+  font-weight: 800;
+}
+
+.second-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  position: relative;
+  gap: 2rem;
+}
+
+.second-part #input-name {
+  height: 3.3rem;
+  width: 17.6rem;
+  font-size: 2.2rem;
+  outline: none;
+  padding-block: 1.4rem;
+  padding-left: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.second-part #btn-check {
+  font-size: 2rem;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  letter-spacing: 0.1rem;
+  position: relative;
+  bottom: -0.5px;
+}
+
+.second-part #input-name,
+#btn-check {
+  background-color: transparent;
+  border: 0.2rem solid white;
+  color: white;
+}
+#btn-check:hover,
+#btn-check:active {
+  background-color: lightcoral;
+  color: black;
+}
+
+#input-name:focus {
+  background-color: lightcoral;
+  color: black;
+}
+
+/*  */
+.answer-msg {
+  color: white;
+  font-size: 2.8rem;
+}
+
+.close-icon {
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  left: -2.2rem;
+}
+
+.close-icon:hover {
+  color: rgb(174, 174, 174);
+}
+
+.hide {
+  display: none;
+}
+
+.third-part {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.male-png,
+.female-png {
+  width: 2.6rem;
+  height: auto;
+  position: relative;
+  right: -2.6rem;
+}
+
+.delete-from-input {
+  color: black;
+  font-size: 2.4rem;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 42.6rem;
+}
+
+.delete-from-input:hover {
+  color: rgb(92, 92, 92);
+}
