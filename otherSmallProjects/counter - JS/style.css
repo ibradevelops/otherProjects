@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rest-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-container {
+  justify-content: center;
+  display: flex;
+  gap: 16rem;
+  align-items: center;
+}
+
+.counter-container button {
+  font-size: 4.6rem;
+  padding: 4rem;
+  border-radius: 10%;
+  font-weight: bold;
+  border: 0.4rem solid black;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+.rest-btn {
+  top: -8rem;
+  position: relative;
+  padding: 3rem 6rem;
+  font-size: 2rem;
+  border: 0.4rem solid black;
+}

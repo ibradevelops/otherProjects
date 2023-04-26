@@ -1,0 +1,149 @@
+:root {
+  --main-padding: 1rem 2rem;
+  --border-rad: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  height: inherit;
+  background-color: aqua;
+  overflow: hidden !important;
+}
+
+img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10rem;
+}
+
+.main-title {
+  font-size: 6.2rem;
+  background-color: white;
+  text-transform: capitalize;
+  padding: var(--main-padding);
+  border-radius: var(--border-rad);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools-for-game {
+  gap: 14rem;
+  display: flex;
+}
+
+.tool {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.name-of-tool {
+  text-transform: capitalize;
+  background-color: white;
+  font-size: 3.2rem;
+  padding: var(--main-padding);
+  border-radius: var(--border-rad);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 {
+  background-color: rgb(255, 255, 255, 0.75);
+  padding: var(--main-padding);
+  border-radius: var(--border-rad);
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+/* ############# */
+
+.hide {
+  display: none;
+}
+
+/* Second container */
+
+.container-2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.player-title {
+  margin-bottom: 4rem;
+  text-align: center;
+  background-color: white;
+  font-size: 2.2rem;
+  padding: var(--main-padding);
+  border-radius: var(--border-rad);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pre-container-2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.waiting-h1 {
+  background-color: white;
+  font-size: 2.2rem;
+  padding: var(--main-padding);
+  border-radius: var(--border-rad);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.restart-btn {
+  background-color: white;
+  padding: var(--main-padding);
+  border-radius: var(--border-rad);
+  font-size: 2.4rem;
+  font-weight: lighter;
+  border: none;
+  position: relative;
+  top: -4rem;
+  cursor: pointer;
+}
+
+/* for restart btn */
+.visib {
+  cursor: auto;
+  opacity: 0;
+}
+
+.side-one,
+.side-two {
+  pointer-events: none;
+}

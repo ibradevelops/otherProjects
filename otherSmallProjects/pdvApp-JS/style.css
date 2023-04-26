@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: inherit;
+  font-family: sans-serif;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+    url("img/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+main {
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1rem solid #005a00;
+  width: 80rem;
+  border-radius: 0.75rem;
+  height: 40rem;
+  background-color: black;
+  padding-top: 10rem;
+}
+
+.primary-text {
+  font-size: 3.4rem;
+}
+
+.text-and-input {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.text-and-input p {
+  font-size: 2rem;
+}
+
+input[type="number"],
+.calc-btn {
+  padding-block: 0.2rem;
+  max-width: 8rem;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.calc-btn:active,
+.calc-btn:hover {
+  cursor: pointer;
+}
+
+input[type="number"]:focus {
+  background-color: #66b366;
+}
+
+/*  */
+.result {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.new-section {
+  display: flex;
+  gap: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-remove {
+  width: 7rem;
+  height: 2.6rem;
+  align-self: flex-end;
+}

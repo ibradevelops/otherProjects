@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  background-color: aliceblue;
+}
+
+img {
+  width: 24rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🖼️</text></svg>")
+      16 0,
+    auto;
+}
+
+main {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first-part h1 {
+  font-size: 3.8rem;
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+  animation: glavnaAnimacija 1s;
+}
+
+.second-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-self: center;
+}
+
+.third-part {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  border: 0.3rem solid black;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  padding-inline: 8.2rem;
+  padding-block: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 5s;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.img-1 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+
+.img-2 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+.img-3 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+}
+
+.img-4 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+}
+
+.img-5 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 2.5s;
+}
+
+.img-6 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
+}
+
+.img-7 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 3.5s;
+}
+
+.img-8 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 4s;
+}
+
+.img-9 {
+  animation: glavnaAnimacija 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes glavnaAnimacija {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .first-part h1 {
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem 4.8rem;
+  }
+  .third-part {
+    margin-block: 4rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+  .second-part {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .second-part {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+  .third-part {
+    margin-block: 6rem;
+    padding-bottom: 4rem;
+  }
+}

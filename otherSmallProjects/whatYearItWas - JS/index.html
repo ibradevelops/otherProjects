@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>What Year it Was</title>
+    <style>
+      ::marker {
+        content: "⏳";
+      }
+      body {
+        font-family: sans-serif;
+        background-color: antiquewhite;
+      }
+      .btn {
+        font-size: 1.4rem;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(38, 38, 38);
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      ul li {
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>
+        Ukoliko želite da znate prije koliko vremena je bila određena godina
+        <br />kliknite na dugme ispod.
+      </h2>
+      <button class="btn">Click here</button>
+      <ul></ul>
+    </section>
+  </body>
+</html>

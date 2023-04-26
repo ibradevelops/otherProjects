@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+// /////
+@mixin flexIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  background: linear-gradient(to bottom right, orangered, orange, orangered);
+  font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+h1 {
+  padding-top: 16rem;
+  font-size: 4.2rem;
+  text-transform: capitalize;
+  @include flexIt();
+  gap: 1rem;
+  button {
+    background: transparent;
+    border: 2px solid black;
+    padding: 0.6rem 2.4rem;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+main {
+  position: relative;
+  height: 40%;
+  @include flexIt;
+
+  .form {
+    @include flexIt();
+    gap: 8rem;
+    h2 {
+      font-size: 3.8rem;
+    }
+    input {
+      outline: none;
+      border: 3px solid black;
+      height: 12rem;
+      width: 24rem;
+      font-size: 6rem;
+    }
+  }
+}
+
+.for-answer {
+  font-size: 4.2rem;
+  text-transform: capitalize;
+  @include flexIt();
+}
