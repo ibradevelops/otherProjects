@@ -1,0 +1,115 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  padding: 2rem;
+  height: inherit;
+  font-family: sans-serif;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.first-side,
+.second-side {
+  flex-basis: 50%;
+}
+
+.first-side {
+  position: relative;
+  height: 80vh;
+  overflow-y: scroll;
+  border: 0.5rem solid black;
+}
+th,
+tr,
+table,
+td {
+  border: 0.3rem solid black;
+  border-collapse: collapse;
+}
+
+table {
+  min-width: 100%;
+}
+
+tr,
+th {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3.2rem;
+}
+
+/* Form */
+.second-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.second-side span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.second-side span > input {
+  width: 32rem;
+  font-size: 2.2rem;
+  padding: 1rem;
+  transition: 0.3s;
+  outline: none;
+  border-radius: 0;
+  border: 0.2rem solid black;
+}
+
+.second-side span > input:focus {
+  border-radius: 2rem;
+}
+
+button,
+.del-btn {
+  font-size: 3.2rem;
+  padding: 0.2rem 4rem;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0.3rem solid black;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+@media (max-width: 920px) {
+  body {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+}
+
+.del-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+}
