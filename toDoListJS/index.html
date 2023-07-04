@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Advanced to do list with local storage" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Advanced To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main__section">
+        <div class="main__section--items">
+          <h1 id="no-items-paragraph">No items.</h1>
+          <img
+            alt="Delete all button"
+            src="images/trashcan.png"
+            title="Delete all"
+            id="btn-delete-all"
+            class="hide"
+          />
+        </div>
+        <div class="main__section--creating">
+          <input type="text" placeholder="Add To Do item" class="item-input" />
+          <span class="btn-urgent">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Urgent</label>
+          </span>
+          <button id="btn-add">Add</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
